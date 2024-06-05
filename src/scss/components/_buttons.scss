@@ -1,0 +1,101 @@
+.btn {
+	--_width: max-content;
+	--_height: auto;
+	--_font-size: var(--fs-lg);
+	--_font-weight: 700;
+	--_line-height: normal;
+	--_color: var(--text-color);
+	--_background-color: transparent;
+	--_border: 0;
+	--_border-radius: 0;
+	--_padding: 0;
+
+	--_icon-size: 1rem;
+	--_icon-color: currentColor;
+
+	--_transition-duration: var(--transition-duration);
+	--_transition-type: var(--transition-type);
+
+	--_color-active: var(--primary-color);
+	--_background-color-active: transparent;
+	--_border-color-active: transparent;
+	--_icon-color-active: currentColor;
+
+	width: var(--_width);
+	height: var(--_height);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .5rem;
+
+	font-size: var(--_font-size);
+	font-weight: var(--_font-weight);
+	line-height: var(--_line-height);
+	color: var(--_color);
+	background-color: var(--_background-color);
+	border: var(--_border);
+	border-radius: var(--_border-radius);
+	padding: var(--_padding);
+	transition: color var(--_transition-duration) var(--_transition-type), background var(--_transition-duration) var(--_transition-type), border var(--_transition-duration) var(--_transition-type), transform var(--_transition-duration) var(--_transition-type);
+	cursor: pointer;
+	outline: none;
+
+	.icon {
+		width: var(--_icon-size);
+		height: var(--_icon-size);
+		color: var(--_icon-color);
+		flex-shrink: 0;
+	}
+
+	&:is(:focus-visible, :active, .is-active) {
+		color: var(--_color-active);
+		background-color: var(--_background-color-active);
+		border-color: var(--_border-color-active);
+
+		.icon {
+			color: var(--_icon-color-active);
+		}
+	}
+}
+
+.btn-inherit {
+	--_width: auto;
+	--_font-size: inherit;
+	--_font-weight: inherit;
+	--_line-height: inherit;
+	--_color: inherit;
+}
+
+.btn-secondary {
+	--_height: 2.75rem;
+	--_color: var(--gray-color);
+	--_background-color: var(--background--gray);
+	--_border-radius: .25rem;
+	--_padding: .25rem 1rem;
+	
+	--_background-color-active: var(--background--gray-v2);
+}
+
+.btn-sm {
+	--_height: 2.375rem;
+	--_font-size: var(--fs-md);
+	--_font-weight: 500;
+}
+
+.btn-lg {
+	--_height: 3rem;
+	--_font-size: 1.25rem;
+}
+
+@media (hover: hover) {
+	.btn:hover {
+		color: var(--_color-active);
+		background-color: var(--_background-color-active);
+		border-color: var(--_border-color-active);
+
+		.icon {
+			color: var(--_icon-color-active);
+		}
+	}
+}

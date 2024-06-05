@@ -1,0 +1,50 @@
+.user__list {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	flex-shrink: 0;
+
+	&-link,
+	&-log {
+		--_icon-size: 1.5rem;
+	}
+
+	&-link {
+		--_color: var(--text-color--v1);
+	}
+
+	&-account {
+		--_font-size: var(--fs-lg);
+		--_color: var(--dark-color);
+
+		&_picture {
+			flex-shrink: 0;
+		}
+
+		&_image {
+			width: 2.75rem;
+			height: 2.75rem;
+			display: block;
+			border-radius: 50%;
+		}
+		
+		&_info {
+			display: flex;
+			flex-direction: column;
+			gap: .125rem;
+		}
+
+		&_role {
+			font-size: var(--fs-sm);
+			font-weight: 400;
+			color: var(--text-color);
+		}
+	}
+
+	&-log {
+
+		&_icon {
+			display: none;
+		}
+	}
+}

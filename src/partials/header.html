@@ -1,0 +1,71 @@
+<header class="header">
+  <div class="container">
+    <a href="./index.html" class="logo header__logo">
+      <picture>
+        <img loading="lazy" src="./img/logo.svg" class="logo__image" width="160" height="44" alt="Путшествуй с гидом">
+      </picture>
+    </a>
+
+    <form class="search header__search">
+      <div class="wrapper-field">
+        <button type="submit" class="btn search__btn">
+          <span class="icon">
+            <svg>
+              <use xlink:href="img/icons/search.svg#svg-search"></use>
+            </svg>
+          </span>
+        </button>
+        <input type="text" class="field search__field" name="search" placeholder="Поиск">
+      </div>
+    </form>
+
+    <ul class="list-reset user__list">
+      <li class="user__list-item">
+        <a href="#" class="btn user__list-link">
+          <span class="icon">
+            <svg>
+              <use xlink:href="img/icons/mail.svg#svg-mail"></use>
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li class="user__list-item">
+        <a href="#" class="btn user__list-link">
+          <span class="icon">
+            <svg>
+              <use xlink:href="img/icons/bell.svg#svg-bell"></use>
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li class="user__list-item">
+        <a href="#" class="btn user__list-account">
+          <picture class="user__list-account_picture">
+            <source srcset="./img/avatars/avatar.webp" type="image/webp">
+            <img loading="lazy" src="./img/avatars/avatar.png" class="user__list-account_image" width="44" height="44" alt="Аватар">
+          </picture>
+          <div class="user__list-account_info">
+            <span class="user__list-account_name">
+              Alexandra C.
+            </span>
+            <span class="user__list-account_role">
+              Admin
+            </span>
+          </div>
+        </a>
+      </li>
+      <li class="user__list-item">
+        <a href="#" class="btn btn-sm btn-secondary user__list-log">
+          <span class="icon user__list-log_icon">
+            <svg>
+              <use xlink:href="img/icons/log-out.svg#svg-log-out"></use>
+            </svg>
+          </span>
+          <span class="user__list-log_text">
+            Выйти
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>

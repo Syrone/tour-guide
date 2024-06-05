@@ -1,0 +1,16 @@
+.header {
+	padding-block: 1rem;
+	border-bottom: .125rem solid var(--border-color--v2);
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2rem;
+	}
+
+	&__search {
+		margin-inline-start: auto;
+		margin-inline-end: 1rem;
+	}
+}

@@ -1,0 +1,25 @@
+.search {
+	max-width: 51.25rem;
+	flex: 1;
+	position: relative;
+
+	&__btn {
+		--_color: var(--gray-color--v1);
+		--_padding: 0 .75rem;
+
+		--_icon-size: 1.25rem;
+
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	&__field {
+		--_field-fw: 500;
+		--_field-bg: var(--background--gray-v2);
+		--_field-padding: .25rem 1.125rem .25rem 2.5rem;
+		--_field-border: 0;
+		--_field-p-fw: 500;
+	}
+}
