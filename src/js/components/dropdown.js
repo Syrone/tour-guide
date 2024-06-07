@@ -32,8 +32,8 @@ dropdowns?.forEach((elem) => {
 	})
 
 	document.addEventListener('click', (event) => {
-		if (!elem.contains(event.target) && elem.classList.contains('is-show')) {
-			hideContent()
+		if (!elem.contains(event.target) && !event.target.classList.contains('vanilla-calendar-month') && !event.target.classList.contains('vanilla-calendar-months__month') && !event.target.classList.contains('vanilla-calendar-year') && !event.target.classList.contains('vanilla-calendar-years__year')) {
+			hideContent();
 		}
 	});
 

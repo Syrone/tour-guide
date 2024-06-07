@@ -5,11 +5,10 @@
 	border-radius: .25rem;
 }
 
-[data-calendar-theme=light] .vanilla-calendar-day__btn {
-
-	&:hover {
-		background-color: var(--background--gray-v2);
-	}
+[data-calendar-theme=light] .vanilla-calendar-day__btn:hover,
+[data-calendar-theme=light] .vanilla-calendar-years__year:hover,
+[data-calendar-theme=light] .vanilla-calendar-months__month:hover {
+	background-color: var(--background--gray-v2);
 }
 
 [data-calendar-theme=light] .vanilla-calendar-day__btn_today {
@@ -22,7 +21,11 @@
 }
 
 [data-calendar-theme=light] .vanilla-calendar-day__btn_selected,
-[data-calendar-theme=light] .vanilla-calendar-day__btn_selected:hover {
+[data-calendar-theme=light] .vanilla-calendar-day__btn_selected:hover,
+[data-calendar-theme=light] .vanilla-calendar-years__year.vanilla-calendar-years__year_selected,
+[data-calendar-theme=light] .vanilla-calendar-years__year.vanilla-calendar-years__year_selected:hover,
+[data-calendar-theme=light] .vanilla-calendar-months__month.vanilla-calendar-months__month_selected,
+[data-calendar-theme=light] .vanilla-calendar-months__month.vanilla-calendar-months__month_selected:hover {
 	color: var(--light-color);
 	background-color: var(--primary-color);
 }

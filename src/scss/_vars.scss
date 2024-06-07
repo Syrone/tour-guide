@@ -6,11 +6,11 @@
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   
   // font-size
-  --h1: 2.5rem;
-  --h2: 2.25rem;
-  --h3: 2rem;
-  --h4: 1.75rem;
-  --h5: 1.5rem;
+  --h1: 1.5rem;
+  --h2: 1.25rem;
+  --h3: 1.125rem;
+  --h4: 1rem;
+  --h5: .875rem;
 
   --fs: 1rem;
   --fs-xs: .75rem;
@@ -36,6 +36,7 @@
   --alert-color: #ff0000;
   --dark-color: #222;
   --light-color: #fff;
+  --light-color--v1: #f7f7f7;
   --gray-color: #666;
   --gray-color--v1: #A2A2A2;
   --gray-color--v2: #8D979E;
@@ -51,6 +52,7 @@
   --background--gray-v2: #F6F6F6;
   --background--gray-v3: #EFF1F4;
   --background--gray-v4: #E7E7E7;
+  --background--gray-v5: #DFE1E4;
 
   // border colors
   --border-color: #E0E0E0;

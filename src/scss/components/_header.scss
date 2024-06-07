@@ -2,6 +2,11 @@
 	background-color: var(--background--light);
 	padding-block: 1rem;
 	border-bottom: .125rem solid var(--border-color--v2);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1010;
 
 	.container {
 		display: flex;

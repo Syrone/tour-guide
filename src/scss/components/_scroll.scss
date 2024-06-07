@@ -1,0 +1,12 @@
+.scroll-x {
+	overflow-x: scroll;
+}
+
+.scroll-invisible {
+
+	&::-webkit-scrollbar,
+	&::-webkit-scrollbar-track,
+	&::-webkit-scrollbar-thumb {
+		display: none;
+	}
+}

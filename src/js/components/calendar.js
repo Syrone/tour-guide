@@ -4,15 +4,15 @@ const today = new Date();
 
 const options = {
   actions: {
-    changeToInput(e, self) {
-      if (!self.HTMLInputElement) return;
+    clickDay(event, self) {
+      const wrapper = self.HTMLElement.closest('.dropdown'),
+            input = wrapper.querySelector('.calendar-input')
+
       if (self.selectedDates[0]) {
-        self.HTMLInputElement.value = self.selectedDates[0];
-        self.hide();
-      } else {
-        self.HTMLInputElement.value = '';
+        input.value = self.selectedDates[0];
       }
-    },
+      wrapper.classList.remove('is-show')
+    }
   },
 	date: {
     min: today.toISOString().split("T")[0],

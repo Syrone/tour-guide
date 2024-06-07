@@ -3,3 +3,8 @@
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
 }
+
+.container-padding {
+  padding-left: max(var(--container-offset), (100% - var(--content-width)) / 2);
+  padding-right: max(var(--container-offset), (100% - var(--content-width)) / 2);
+}
