@@ -21,6 +21,7 @@ html {
   font-weight: 400;
   line-height: var(--lh);
   color: var(--text-color);
+  background-color: var(--background);
   margin: 0;
 }
 
@@ -35,7 +36,15 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.main {
+  flex: 1;
 }
 
 .list-reset {

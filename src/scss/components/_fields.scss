@@ -15,7 +15,7 @@
 	--_field-p-fs: var(--fs);
 	--_field-p-fw: 400;
 	--_field-p-lh: var(--lh-1);
-	--_field-p-color: var(--gray-color--v1);
+	--_field-p-color: var(--gray-color);
 
 	width: var(--_field-width);
 	height: var(--_field-height);
@@ -40,6 +40,30 @@
 	}
 }
 
+.calendar-input {
+	--_field-padding: .25rem 2.5rem .25rem 1.125rem;
+	--_field-p-color: var(--dark-color);
+}
+
 .wrapper-field {
 	position: relative;
+
+	&--calendar {
+
+		&::after {
+			content: '';
+			width: 1.25rem;
+			height: 1.25rem;
+			display: block;
+			pointer-events: none;
+			background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M15.8333 3.33334H4.16667C3.24619 3.33334 2.5 4.07954 2.5 5.00001V16.6667C2.5 17.5872 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5872 17.5 16.6667V5.00001C17.5 4.07954 16.7538 3.33334 15.8333 3.33334Z" stroke="%238A8A8A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/%3E%3Cpath d="M13.3334 1.66666V4.99999" stroke="%238A8A8A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/%3E%3Cpath d="M6.66663 1.66666V4.99999" stroke="%238A8A8A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/%3E%3Cpath d="M2.5 8.33334H17.5" stroke="%238A8A8A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			position: absolute;
+			top: 50%;
+			right: 1.125rem;
+			transform: translateY(-50%);
+		}
+	}
 }

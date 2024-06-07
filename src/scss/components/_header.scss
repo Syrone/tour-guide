@@ -1,4 +1,5 @@
 .header {
+	background-color: var(--background--light);
 	padding-block: 1rem;
 	border-bottom: .125rem solid var(--border-color--v2);
 
@@ -12,5 +13,9 @@
 	&__search {
 		margin-inline-start: auto;
 		margin-inline-end: 1rem;
+
+		.search__field {
+			--_field-p-color: var(--gray-color--v1);
+		}
 	}
 }

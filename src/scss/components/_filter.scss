@@ -1,0 +1,26 @@
+.filter {
+	padding-block: 1.5rem;
+	background-color: var(--background--light);
+	border-bottom: .125rem solid var(--border-color--v2);
+
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: .625rem;
+	}
+
+	&__list {
+
+		&-item {
+
+			&--select {
+				width: 100%;
+				max-width: 320px;
+			}
+
+			&--date {
+				max-width: 220px;
+			}
+		}
+	}
+}

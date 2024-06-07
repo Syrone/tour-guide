@@ -1,0 +1,32 @@
+.dropdown {
+	position: relative;
+
+	&__content {
+		display: none;
+		margin-top: .25rem;
+		border: .0625rem solid var(--border-color);
+		border-radius: .25rem;
+		position: absolute;
+		top: 100%;
+		z-index: 1;
+	}
+
+	&.is-show {
+
+		.dropdown__btn {
+			border-color: var(--primary-color);
+		}
+
+		.dropdown__content {
+			display: block;
+		}
+	}
+
+	&.is-inverse {
+
+		.dropdown__content {
+			left: auto;
+			right: 0;
+		}
+	}
+}

@@ -52,9 +52,33 @@
 		--_height: 1.625rem;
 	}
 
+	.btn-primary-10 {
+		--_height: 2.25rem;
+		--_font-size: .75rem;
+	}
+
 	// fields
 	.field {
-		--_field-height: 2rem;
+		--_field-height: 2.25rem;
+		--_field-fs: var(--fs-xs);
+		--_field-p-fs: var(--_field-fs);
+		--_field-padding: .25rem .75rem;
+	}
+
+	.calendar-input {
+		--_field-padding: .25rem 1.75rem .25rem .75rem;
+	}
+
+	.wrapper-field {
+
+		&--calendar {
+
+			&::after {
+				width: .875rem;
+				height: .875rem;
+				right: .75rem
+			}
+		}
 	}
 
 	// logo
@@ -99,6 +123,25 @@
 		}
 	}
 
+	// choices
+	.choices {
+
+		&__inner {
+			min-height: 2.25rem;
+			font-size: var(--fs-xs);
+			padding: 0.25rem 1.75rem 0.25rem .75rem;
+		}
+
+		&[data-type*=select-one] {
+
+			&::after {
+				width: .625rem;
+				height: .625rem;
+				right: .75rem;
+			}
+		}
+	}
+
 	// header
 	.header {
 		padding-block: .75rem;
@@ -113,6 +156,49 @@
 			width: 100%;
 			flex: auto;
 			order: 1;
+
+			.search__field {
+				--_field-height: 2rem;
+			}
+		}
+	}
+
+	// filter
+	.filter {
+		padding-block: .75rem;
+
+		&__form,
+		&__list {
+			width: 100%;
+			gap: .5rem;
+		}
+
+		&__form {
+			flex-direction: column;
+		}
+
+		&__list {
+			flex-wrap: wrap;
+
+			&-item {
+
+				&--select {
+					max-width: 100%;
+				}
+
+				&--date {
+					max-width: 100%;
+					flex: 1;
+				}
+
+				&--btn {
+					width: 100%;
+				}
+			}
+		}
+
+		&__btn {
+			--_width: 100%;
 		}
 	}
 

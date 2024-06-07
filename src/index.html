@@ -7,7 +7,45 @@
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
-      
+      <div class="filter">
+        <div class="container">
+          <form class="filter__form">
+            <ul class="list-reset filter__list">
+              <li class="filter__list-item filter__list-item--select">
+                <div class="wrapper-field">
+                  <select class="form-select js-choices">
+                    <option selected>Все организаторы</option>
+                    <option value="1">Что-то первое</option>
+                    <option value="2">Что-то второе</option>
+                    <option value="3">Что-то третье</option>
+                  </select>
+                </div>
+              </li>
+              <li class="filter__list-item filter__list-item--date">
+                <div class="dropdown wrapper-field--calendar">
+                  <input type="text" class="field calendar-input dropdown__btn" placeholder="Дата экскурсии">
+                  <div class="dropdown__content">
+                    <div class="calendar"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="filter__list-item filter__list-item--date">
+                <div class="dropdown wrapper-field--calendar">
+                  <input type="text" class="field calendar-input dropdown__btn" placeholder="Дата тура">
+                  <div class="dropdown__content">
+                    <div class="calendar"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="filter__list-item filter__list-item--btn">
+                <button type="button" class="btn btn-primary-10 filter__btn">
+                  Фильтр
+                </button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
     </main>
     @include('partials/footer.html')
   </div>
