@@ -9,9 +9,9 @@ scrollX?.forEach((elem) => {
 		elem.classList.add('cursor-dragging')
 
 		if (e.target.matches('[draggable]')) {
-			e.target.addEventListener('mousedown', dragStop);
-      e.target.addEventListener('mouseup', dragStop);
+      e.target.addEventListener('mouseout', dragStop);
       e.target.addEventListener('mouseleave', dragStop);
+			document.addEventListener('mouseover', dragStop);
     }
 	}
 
