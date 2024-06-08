@@ -72,7 +72,7 @@
               Добавить
             </button>
 
-            <ul class="list-reset order__cards">
+            <ul class="list-reset order__cards js-sortable">
               <li class="order__cards-item">
                 <span class="order__cards-item_price">
                   2 500 ₽
@@ -182,7 +182,7 @@
               Добавить
             </button>
 
-            <ul class="list-reset order__cards">
+            <ul class="list-reset order__cards js-sortable">
               <li class="order__cards-item">
                 <span class="order__cards-item_price">
                   2 500 ₽
@@ -292,7 +292,7 @@
               Добавить
             </button>
 
-            <ul class="list-reset order__cards">
+            <ul class="list-reset order__cards js-sortable">
               <li class="order__cards-item">
                 <span class="order__cards-item_price">
                   2 500 ₽
@@ -358,7 +358,7 @@
               Добавить
             </button>
 
-            <ul class="list-reset order__cards">
+            <ul class="list-reset order__cards js-sortable">
               <li class="order__cards-item">
                 <span class="order__cards-item_price">
                   2 500 ₽
@@ -424,7 +424,7 @@
               Добавить
             </button>
 
-            <ul class="list-reset order__cards">
+            <ul class="list-reset order__cards js-sortable">
               <li class="order__cards-item">
                 <span class="order__cards-item_price">
                   2 500 ₽
@@ -490,7 +490,7 @@
               Добавить
             </button>
 
-            <ul class="list-reset order__cards">
+            <ul class="list-reset order__cards js-sortable">
               <li class="order__cards-item">
                 <span class="order__cards-item_price">
                   2 500 ₽
@@ -556,7 +556,7 @@
               Добавить
             </button>
 
-            <ul class="list-reset order__cards">
+            <ul class="list-reset order__cards js-sortable">
               <li class="order__cards-item">
                 <span class="order__cards-item_price">
                   2 500 ₽
@@ -623,7 +623,143 @@
             </div>
 
             <div class="graph-modal__main">
-
+              <div class="form">
+                <div class="form__item">
+                  <div class="form__item-field">
+                    <h4 class="form__item-title">
+                      Товар <span class="form__item-required">*</span>
+                    </h4>
+                    <div class="wrapper-field">
+                      <select class="js-choices" required>
+                        <option selected>Выберите товар</option>
+                        <option value="1">Товар</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__item-field">
+                    <h4 class="form__item-title">
+                      Статус:
+                    </h4>
+                    <div class="wrapper-field">
+                      <select class="js-choices">
+                        <option selected>Выберите cтатус</option>
+                        <option value="1">Статус</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__item form__item--v1">
+                  <div class="form__item-field">
+                    <h4 class="form__item-title">
+                      Дата <span class="form__item-required">*</span>
+                    </h4>
+                    <div class="dropdown">
+                      <input type="text" class="field dropdown__btn" name="date" placeholder="Выберите дату" required>
+                      <div class="dropdown__content">
+                        <div class="calendar"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__item-field">
+                    <h4 class="form__item-title">
+                      Время <span class="form__item-required">*</span>
+                    </h4>
+                    <div class="wrapper-field">
+                      <input type="text" class="field" name="time" placeholder="Выберите время" required>
+                    </div>
+                  </div>
+                  <div class="form__item-field">
+                    <h4 class="form__item-title">
+                      Взрослых билетов
+                    </h4>
+                    <div class="wrapper-field">
+                      <input type="text" class="field" name="adult-tickets" placeholder="Введите число" required>
+                    </div>
+                  </div>
+                  <div class="form__item-field">
+                    <h4 class="form__item-title">
+                      Детских билетов
+                    </h4>
+                    <div class="wrapper-field">
+                      <input type="text" class="field" name="child-tickets" placeholder="Введите число" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__item">
+                  <div class="form__item-field">
+                    <h4 class="form__item-title">
+                      Итоговая стоимость
+                    </h4>
+                    <div class="wrapper-field">
+                      <input type="text" class="field" name="price" placeholder="Итоговая стоимость" readonly required>
+                    </div>
+                  </div>
+                  <div class="form__item-field">
+                    <h4 class="form__item-title">
+                      Экскурсия <span class="form__item-required">*</span>
+                    </h4>
+                    <div class="wrapper-field">
+                      <input type="text" class="field" name="tour" placeholder="Введите название" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__item">
+                  <div class="form__item-field">
+                    <h4 class="form__item-title">
+                      Имя
+                    </h4>
+                    <div class="wrapper-field">
+                      <input type="text" class="field" name="name" placeholder="Введите имя" required>
+                    </div>
+                  </div>
+                  <div class="form__item-field">
+                    <h4 class="form__item-title">
+                      Фамилия
+                    </h4>
+                    <div class="wrapper-field">
+                      <input type="text" class="field" name="female" placeholder="Введите фамилию" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__item">
+                  <div class="form__item-field">
+                    <h4 class="form__item-title">
+                      Телефон
+                    </h4>
+                    <div class="wrapper-field">
+                      <input type="text" class="field" name="tel" placeholder="Введите телефон" required>
+                    </div>
+                  </div>
+                  <div class="form__item-field">
+                    <h4 class="form__item-title">
+                      Email
+                    </h4>
+                    <div class="wrapper-field">
+                      <input type="email" class="field" name="email" placeholder="Введите email" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__item form__item--full">
+                  <div class="form__item-field">
+                    <h4 class="form__item-title">
+                      Комментарий покупателя
+                      </h4>
+                      <div class="wrapper-field">
+                        <textarea class="field field-textarea" placeholder="Напишите текст"></textarea>
+                      </div>
+                  </div>
+                </div>
+                <div class="form__item form__item--full">
+                  <div class="form__item-field">
+                    <h4 class="form__item-title">
+                      Комментарий менеджера
+                    </h4>
+                    <div class="wrapper-field">
+                      <textarea class="field field-textarea" placeholder="Напишите текст"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="graph-modal__footer">

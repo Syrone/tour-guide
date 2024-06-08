@@ -58,10 +58,12 @@
 @media (max-width: 48rem) {
 
 	// typography
+	h3,
 	.h3 {
 		font-size: var(--fs-lg);
 	}
 	
+	h5,
 	.h5 {
 		font-size: var(--fs-sm);
 	}
@@ -78,6 +80,11 @@
 		--_icon-size: .75rem;
 	}
 
+	.btn-primary {
+		--_height: 2.25rem;
+		--_font-size: .75rem;
+	}
+
 	.btn-primary-10 {
 		--_height: 2.25rem;
 		--_font-size: .75rem;
@@ -89,6 +96,11 @@
 		--_field-fs: var(--fs-xs);
 		--_field-p-fs: var(--_field-fs);
 		--_field-padding: .25rem .75rem;
+	}
+
+	.field-textarea {
+		--_field-height: 3.125rem;
+		--_field-padding: .625rem .75rem;
 	}
 
 	.calendar-input {
@@ -149,6 +161,20 @@
 		}
 	}
 
+	// form
+	.form {
+		gap: .75rem;
+
+		&__item {
+			gap: .5rem;
+
+			&-title {
+				font-size: var(--fs-xs);
+				margin-bottom: .375rem;
+			}
+		}
+	}
+
 	// choices
 	.choices {
 
@@ -166,6 +192,12 @@
 				right: .75rem;
 			}
 		}
+	}
+
+	.choices__list[aria-expanded] .choices__item,
+	.choices__list--dropdown .choices__item {
+		font-size: var(--fs-xs);
+		padding: .625rem .75rem;
 	}
 
 	// header
@@ -294,10 +326,45 @@
 		}
 	}
 
+	// modals
+	.graph-modal {
+
+		&__container {
+			padding: var(--container-offset);
+		}
+
+		&__close {
+			--_icon-size: 1.375rem;
+
+			top: 1rem;
+			right: var(--container-offset);
+		}
+
+		&__content {
+			gap: .75rem;
+
+			&-header {
+				margin-bottom: .25rem;
+			}
+		}
+	}
+
 }
 
 /** > 576px **/
 @media (max-width: 36rem) {
+
+	// form
+	.form {
+
+		&__item {
+			grid-template-columns: minmax(0, 1fr);
+
+			&--v1 {
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+			}
+		}
+	}
 
 	// order
 	.order__list {

@@ -62,6 +62,8 @@
 	}
 
 	&__cards {
+		height: 100%;
+		min-height: 10rem;
 		display: grid;
 		align-content: start;
 		gap: .625rem;

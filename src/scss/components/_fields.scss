@@ -1,7 +1,7 @@
 .field {
 	--_field-width: 100%;
 	--_field-height: 2.75rem;
-	--_field-fs: var(--fs);
+	--_field-fs: var(--fs-lg);
 	--_field-fw: 400;
 	--_field-lh: var(--lh-1);
 	--_field-color: var(--dark-color);
@@ -12,13 +12,14 @@
 	--_field-duration: var(--transition-duration);
 	--_field-type: var(--transition-type);
 
-	--_field-p-fs: var(--fs);
-	--_field-p-fw: 400;
-	--_field-p-lh: var(--lh-1);
+	--_field-p-fs: var(--_field-fs);
+	--_field-p-fw: var(--_field-fw);
+	--_field-p-lh: var(--_field-lh);
 	--_field-p-color: var(--gray-color);
 
 	width: var(--_field-width);
 	height: var(--_field-height);
+	display: block;
 	font-size: var(--_field-fs);
 	font-weight: var(--_field-fw);
 	line-height: var(--_field-lh);
@@ -38,6 +39,18 @@
 		line-height: var(--_field-p-lh);
 		color: var(--_field-p-color);
 	}
+
+	&:focus-visible {
+		--_field-border: .0625rem solid var(--primary-color);
+	}
+}
+
+.field-textarea {
+	--_field-height: 5rem;
+	--_field-padding: .8125rem 1.125rem;
+	--_field-p-color: #919191;
+
+	resize: none;
 }
 
 .calendar-input {
