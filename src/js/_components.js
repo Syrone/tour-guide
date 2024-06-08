@@ -1,4 +1,4 @@
-import './components/header.js';
+import './components/scroll.js';
 import './components/choices.js';
 import './components/calendar.js';
 import './components/sortable.js';

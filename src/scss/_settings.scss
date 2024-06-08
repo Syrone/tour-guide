@@ -44,7 +44,6 @@ a {
 }
 
 .main {
-  margin-top: var(--header-height, 78px);
   flex: 1;
 }
 
@@ -92,4 +91,8 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.cursor-dragging {
+  cursor: grabbing;
 }

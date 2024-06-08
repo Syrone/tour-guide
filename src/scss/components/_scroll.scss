@@ -1,5 +1,7 @@
 .scroll-x {
+	overflow-y: hidden;
 	overflow-x: scroll;
+	will-change: scroll-position;
 }
 
 .scroll-invisible {
